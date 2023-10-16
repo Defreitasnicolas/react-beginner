@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid rgb(216, 212, 212);
+  border-radius: 3px;
+  background-color: lightgrey;
+}
+img {
+  border-radius: 3px;
+  border: 1px solid rgb(163, 161, 161);
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;  
+}
+
