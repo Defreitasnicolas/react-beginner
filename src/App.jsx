@@ -3,15 +3,18 @@ import Card from "./component/card";
 import { useState } from "react";
 
 const arrayTravel = [
-  { destination: "maldives", img: "src/assets/maldives.jpg" },
-  { destination: "cap vert", img: "src/assets/cap-vert.jpg" },
-  { destination: "brugge", img: "src/assets/brugge.jpg" },
-  { destination: "guadeloupe", img: "src/assets/guadeloupe.jpg" },
+  { destination: "Maldives", img: "src/assets/maldives.jpg" },
+  { destination: "Cap Vert", img: "src/assets/cap-vert.jpg" },
+  { destination: "Brugge", img: "src/assets/brugge.jpg" },
+  { destination: "Guadeloupe", img: "src/assets/guadeloupe.jpg" },
 ];
+
+
+
 
 function App() {
   const [index, setIndex] = useState(0);
-  console.log(arrayTravel[index]);
+  
   return (
     <>
       <div>
@@ -20,6 +23,7 @@ function App() {
           destination={arrayTravel[index].destination}
           index={index}
           setIndex={setIndex}
+          arrayTravel2={arrayTravel}
         />
       </div>
     </>

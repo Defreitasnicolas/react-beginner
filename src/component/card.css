@@ -1,16 +1,32 @@
 .card {
-  border: 1px solid rgb(216, 212, 212);
   border-radius: 3px;
   background-color: lightgrey;
 }
 img {
-  border-radius: 3px;
-  border: 1px solid rgb(163, 161, 161);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: transform .1s;
 }
+
+.img {
+  width: 641px;
+  height: 435px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+img:hover{
+  -ms-transform: scale(1.05) translate(0px); /* IE 9 */
+  -webkit-transform: scale(1.05) translate(0px); /* Safari 3-8 */
+  transform: scale(1.05) translate(0px);
+  border-radius: 5px;
+  }
 
 p {
   color: black;
   font-size: 2rem;
+  height: 2rem;
 }
 
 .button {
@@ -18,4 +34,5 @@ p {
   justify-content: space-around;
   margin-bottom: 1rem;  
 }
+
 
